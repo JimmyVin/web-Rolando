@@ -42,12 +42,14 @@
     <div class="subir">
         
         
-        <a href="Untitled-2.html" onclick="pass()"><h1>&#128526;</h1></a>
+        <a id="a" href="Untitled-2.html"><h1>&#128247;</h1></a>
     </div>
 </body>
 <script>
+    let a = document.getElementById('a');
+    a.addEventListener('click',pass)
     function pass(){
-        let con = prompt('i.ps:');
+        let con = prompt('in.psw:');
         if(con != 555){
             alert('chii.. ni se  sabe el password, pasa pasa no mas')
         }

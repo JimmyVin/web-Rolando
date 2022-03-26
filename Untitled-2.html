@@ -8,22 +8,55 @@
     <link rel="icon" href="https://ih1.redbubble.net/image.2716299376.2800/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg">
 </head>
 <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
     body{
         background-color: lightseagreen;}
 
-    div{
+    #div{
         position: absolute;
-        
         left: 25%;
         top: 35%;
        
     }
+    a{
+
+        text-decoration: none;
+        
+    }
+    h1{
+        position: absolute;
+        width: 2%;
+        
+    }
 </style>
 <body>
-    <div>
-        <input type="file" name="" id=""> <br><br>
-        <center> <input type="button" name="" id="" value="subir foto"></center>
+    <a href="/Untitled-1.html"><h1>&#x1f3aa;</h1></a>
+    <div id="div">
+        <input type="file" name="" id="input"> <br><br>
+        <center> <input type="button" name="" id="inputDos" value="subir foto"></center>
      
     </div>
+    <div id="imagen"></div>
+
+    <script>
+        
+        
+        inputDos.addEventListener('click',des);
+        function des(){
+            let input = document.getElementById('input');
+            if(input == ''){
+                alert('seleccione un rchivo que a de ser');}
+            else{
+                let divImagen = document.getElementById('inputDos');
+                document.getElementById('imagen').innerHTML = divImagen;
+
+            }
+                
+            }
+        
+    </script>
 </body>
 </html>
